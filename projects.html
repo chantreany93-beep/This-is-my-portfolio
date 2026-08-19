@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">Explore my latest work and accomplishments</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web Design</button>
+                <button class="filter-btn" onclick="filterProjects('app')">App Development</button>
+                <button class="filter-btn" onclick="filterProjects('design')">UI/UX Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">📱</div>
+                    <h3>Mobile App Interface</h3>
+                    <p class="project-category">Web Design</p>
+                    <p>
+                        A modern mobile app design with responsive layouts and intuitive navigation. 
+                        Features include smooth animations, dark mode support, and accessibility features.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image">🛒</div>
+                    <h3>E-Commerce Platform</h3>
+                    <p class="project-category">App Development</p>
+                    <p>
+                        Full-featured e-commerce website with payment integration and user management. 
+                        Includes product catalog, shopping cart, secure checkout, and order tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">📊</div>
+                    <h3>Analytics Dashboard</h3>
+                    <p class="project-category">Web Design</p>
+                    <p>
+                        Interactive dashboard for data visualization and real-time analytics tracking. 
+                        Features real-time updates, multiple chart types, and customizable widgets.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">🎨</div>
+                    <h3>Design System</h3>
+                    <p class="project-category">UI/UX Design</p>
+                    <p>
+                        Comprehensive UI component library with accessibility and modern design standards. 
+                        Includes buttons, forms, cards, modals, and more.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Storybook</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">🌐</div>
+                    <h3>Personal Blog Platform</h3>
+                    <p class="project-category">Web Design</p>
+                    <p>
+                        Modern blogging platform with markdown support, comment system, and social sharing. 
+                        Features SEO optimization and responsive design for all devices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Markdown</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image">⚽</div>
+                    <h3>Sports Event App</h3>
+                    <p class="project-category">App Development</p>
+                    <p>
+                        Mobile application for sports event management with live updates, ticket booking, 
+                        and push notifications. Real-time scoreboard and event streaming features.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">WebSocket</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">🎭</div>
+                    <h3>Brand Identity Design</h3>
+                    <p class="project-category">UI/UX Design</p>
+                    <p>
+                        Complete brand identity package including logo, color palette, typography, 
+                        and brand guidelines. Delivered for a tech startup.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Adobe XD</span>
+                        <span class="tech-tag">Branding</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">📸</div>
+                    <h3>Photo Gallery App</h3>
+                    <p class="project-category">Web Design</p>
+                    <p>
+                        Interactive photo gallery with filtering, sorting, and lightbox features. 
+                        Includes image upload, organization tools, and cloud storage integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">CSS Grid</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want to see more?</h2>
+            <p>Check out my GitHub profile for more projects and code samples</p>
+            <a href="contact.html" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter projects
+            projects.forEach(project => {
+                if (category === 'all' || project.dataset.category === category) {
+                    project.style.display = 'block';
+                    setTimeout(() => project.style.opacity = '1', 10);
+                } else {
+                    project.style.opacity = '0';
+                    setTimeout(() => project.style.display = 'none', 300);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
