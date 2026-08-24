@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://this-is-my-portfolio-hsbl.vercel.app/sitemap.xml
