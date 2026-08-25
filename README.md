@@ -1,4 +1,4 @@
-# My Professional Portfolio
+# Chantrea Ny
 
 A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript.
 
